@@ -76,6 +76,7 @@ CREATE TABLE reviews (
 );
 
 CREATE TABLE geolocation (
+	geolocation_id serial not null,
     geolocation_zip_code_prefix INTEGER NOT NULL,
     geolocation_lat NUMERIC(9,6) NOT NULL,
     geolocation_lng NUMERIC(9,6) NOT NULL,
